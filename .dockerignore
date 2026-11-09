@@ -1,0 +1,26 @@
+# Control de versiones
+.git
+.gitignore
+.gitattributes
+
+# Cachés y ficheros compilados de Python
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Entornos virtuales
+.venv
+venv
+env
+
+# Variables de entorno y secretos
+.env
+
+# Configuración de editores
+.vscode
+.idea
+
+# Ficheros que no hacen falta dentro de la imagen
+README.md
+dockerfile
+.dockerignore
