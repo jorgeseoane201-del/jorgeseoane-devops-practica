@@ -108,14 +108,14 @@ curl -X POST http://localhost:8000/pedidos -H "Content-Type: application/json" -
 La imagen está publicada en Docker Hub:
 
 ```bash
-docker pull USUARIO_DOCKERHUB/tienda-online:1.0
-docker run -d --name tienda-online -p 8000:8000 USUARIO_DOCKERHUB/tienda-online:1.0
+docker pull jorgeseogar/tienda-online:1.0
+docker run -d --name tienda-online -p 8000:8000 jorgeseogar/tienda-online:1.0
 ```
 
 ### Publicar una nueva versión
 
 ```bash
 docker login
-docker tag tienda-online:1.0 USUARIO_DOCKERHUB/tienda-online:1.0
-docker push USUARIO_DOCKERHUB/tienda-online:1.0
+docker tag tienda-online:1.0 jorgeseogar/tienda-online:1.0
+docker push jorgeseogar/tienda-online:1.0
 ```
